@@ -1,0 +1,168 @@
+// Bootstrap custom overrides
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+//
+// Color system
+//
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-900
+  ),
+  $colors
+);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+
+    "black":      $black,
+    "white":      $white,
+
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan
+  ),
+  $theme-colors
+);
+
+$body-bg:                   $black;
+$body-color:                $white;
+$enable-rounded:            false;
+$enable-shadows:            false;
+$enable-gradients:          false;
+
+$transition-base:             all .2s ease-in-out;
+$transition-fade:             opacity .35s linear;
+$transition-collapse:         height .35s ease;
+
+$font-family-sans-serif:      "Roboto Condensed",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              .875rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-sm:                ($font-size-base * .875);
+
+$headings-font-family:        'Roboto Condensed';
+$headings-font-weight:        100;
+$headings-color:              inherit;
+
+$h1-font-size:                $font-size-base * 5.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$display1-weight:             100;
+$display2-weight:             100;
+$display4-weight:             100;
+$display3-weight:             100;
+
+$border-width:                1px;
+$border-radius:               .25rem;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+$popover-font-size:                 $font-size-sm;
+$popover-bg:                        $black;
+$popover-max-width:                 80%;
+$popover-border-width:              $border-width;
+$popover-border-color:              rgba($gray-600, .2);
+$popover-border-radius:             $border-radius-lg ;
+$popover-box-shadow:                0 .25rem .5rem rgba($white, .2);
+
+$popover-header-bg:                 darken($popover-bg, 3%);
+$popover-header-color:              $headings-color;
+$popover-header-padding-y:          .5rem ;
+$popover-header-padding-x:          .75rem ;
+
+$popover-body-color:                $body-color ;
+$popover-body-padding-y:            $popover-header-padding-y ;
+$popover-body-padding-x:            $popover-header-padding-x ;
+
+$popover-arrow-width:               1rem;
+$popover-arrow-height:              .5rem;
+$popover-arrow-color:               $popover-bg;
+
+$popover-arrow-outer-color:         fade-in($popover-border-color, .05);
